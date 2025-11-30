@@ -1,6 +1,3 @@
-# ecommerce-api
-"FastAPI + MySQL E-Commerce Shopping Cart API"
-```python
 from fastapi import FastAPI, HTTPException
 from sqlalchemy import create_engine
 from sqlalchemy.orm import sessionmaker, Session
@@ -32,4 +29,4 @@ def get_product(product_id: int):
 
 if __name__ == "__main__":
     uvicorn.run(app, host="0.0.0.0", port=8000)
-```
+
